@@ -1,22 +1,1 @@
-ï»¿Scopus-29-Analyze-Year
-
-"Your query : (TITLE-ABS-KEY ( ""rapid review"" OR ""rapid evidence review"" ) AND ( LIMIT-TO ( SRCTYPE,""j"" ) )  AND ( LIMIT-TO ( SUBJAREA,""ENVI"" ) ) )"
-
-
-Number of results : 29
-
-"YEAR",
-"2020","4"
-"2019","6"
-"2018","5"
-"2017","3"
-"2016","2"
-"2015","1"
-"2013","1"
-"2010","1"
-"2008","1"
-"2003","1"
-"2001","1"
-"1992","1"
-"1985","1"
-"1980","1"
+•ÈÀScopus-29-Analyze-Year,,"Your query : (TITLE-ABS-KEY ( ""rapid review"" OR ""rapid evidence review"" ) AND ( LIMIT-TO ( SRCTYPE,""j"" ) )  AND ( LIMIT-TO ( SUBJAREA,""ENVI"" ) ) )",,,Number of results : 38,,YEAR,2020,142019,62018,52017,32016,22015,12013,12010,12008,12003,12001,11992,11985,11980,1

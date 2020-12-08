@@ -18,26 +18,27 @@ library(patchwork)
 6 searches from Scopus were exported from Analyses pane as counts of fund papers per year.
 
 ```{r load data}
-data_SRinMEDI <- read.csv(file = "./data/SRinMEDI_Scopus_20200710.csv", skip=6, col.names=c("Year","Count"))
+data_SRinMEDI <- read.csv(file = "./data/SRinMEDI_Scopus_20200710.csv", skip=7, col.names=c("Year","Count"))
 dim(data_SRinMEDI)
 
-data_RRinMEDI <- read.csv(file = "./data/RRinMEDI_Scopus_20200710.csv", skip=6, col.names=c("Year","Count"))
+data_RRinMEDI <- read.csv(file = "./data/RRinMEDI_Scopus_20200710.csv", skip=7, col.names=c("Year","Count"))
 dim(data_RRinMEDI)
 
-data_SRinSOCI <- read.csv(file = "./data/SRinSOCI_Scopus_20200710.csv", skip=6, col.names=c("Year","Count"))
+data_SRinSOCI <- read.csv(file = "./data/SRinSOCI_Scopus_20200710.csv", skip=7, col.names=c("Year","Count"))
 dim(data_SRinSOCI)
 
-data_RRinSOCI <- read.csv(file = "./data/RRinSOCI_Scopus_20200710.csv", skip=6, col.names=c("Year","Count"))
+data_RRinSOCI <- read.csv(file = "./data/RRinSOCI_Scopus_20200710.csv", skip=7, col.names=c("Year","Count"))
 dim(data_RRinSOCI)
 
-data_SRinENVI <- read.csv(file = "./data/SRinENVI_Scopus_20200710.csv", skip=6, col.names=c("Year","Count"))
+data_SRinENVI <- read.csv(file = "./data/SRinENVI_Scopus_20200710.csv", skip=7, col.names=c("Year","Count"))
 dim(data_SRinENVI)
 
-data_RRinENVI <- read.csv(file = "./data/RRinENVI_Scopus_20200710.csv", skip=6, col.names=c("Year","Count"))
+data_RRinENVI <- read.csv(file = "./data/RRinENVI_Scopus_20200710.csv", skip=7, col.names=c("Year","Count"))
 dim(data_RRinENVI)
 ```
 
 ```{r merge data}
+#add dataset labels columns:
 data_SRinMEDI$Search <- "SR_MEDI"
 data_RRinMEDI$Search <- "RR_MEDI"
 data_SRinSOCI$Search <- "SR_SOCI"
@@ -45,17 +46,14 @@ data_RRinSOCI$Search <- "RR_SOCI"
 data_SRinENVI$Search <- "SR_ENVI"
 data_RRinENVI$Search <- "RR_ENVI"
 
+#bind
 data_all <- rbind(data_SRinMEDI, data_RRinMEDI, data_SRinSOCI, data_RRinSOCI, data_SRinENVI, data_RRinENVI)
 str(data_all)
-data_all$Search <- factor(data_all$Search)
-
-
-
-
+data_all$Search <- factor(data_all$Search) #labels as factors
 ```
 
 
-## Figure 1 
+## Plot
 Literature survey results plots.
 Using Multi groups line chart with ggplot2 (https://www.r-graph-gallery.com/line-chart-several-groups-ggplot2.html)
 
@@ -66,7 +64,7 @@ p1 <- data_all %>%
   filter(Year >= 1990) %>% #remove data points from before 1980
   ggplot( aes(x=Year, y=Count, group=Search, color=Search)) +
     geom_line() +
-    theme_minimal() +
+    theme_minimal(base_size = 10) +
     scale_color_manual(values = c("red", "blue", "green"), labels = c("ENVI", "MEDI", "SOCI")) +
     labs(title = "Number of journal articles mentioning \"systematic review\" OR \"systematic evidence review\" \n across three subject disciplines", tag = "A") +
     ylab("Article count") + 
@@ -79,7 +77,7 @@ p2 <- data_all %>%
     filter(Year >= 1990) %>% #remove data points from before 1980
     ggplot( aes(x=Year, y=Count, group=Search, color=Search)) +
     geom_line()  +
-    theme_minimal() +
+    theme_minimal(base_size = 10) +
     scale_color_manual(values = c("red", "blue", "green"), labels = c("ENVI", "MEDI", "SOCI")) +
     labs(title = "Number of journal articles mentioning \"rapid review\" OR \"rapid evidence review\" \n across three subject disciplines", tag = "B") +
     ylab("Article count") + 
@@ -89,9 +87,9 @@ p2 <- data_all %>%
 p1/p2
 
 ## save plots
-ggsave(file = "figure1_v01.pdf", width = 16, height = 12, units = "cm", scale = 1.2, device = cairo_pdf)
+ggsave(file = "figure_litsurvey_v02.pdf", width = 16, height = 12, units = "cm", scale = 1.2, device = cairo_pdf)
 
-# pdf(file = "figure1_v1.pdf", width = 16, height =  8)
+# pdf(file = "figure_litsurvey_v02.pdf", width = 16, height =  8)
 # p1 / p2 # + plot_layout(heights = c(1,1))
 # dev.off()
 

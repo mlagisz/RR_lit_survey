@@ -1,26 +1,1 @@
-ï»¿Scopus-111-Analyze-Year
-
-"Your query : (TITLE-ABS-KEY ( ""rapid review"" OR ""rapid evidence review"" ) AND ( LIMIT-TO ( SRCTYPE,""j"" ) )  AND ( LIMIT-TO ( SUBJAREA,""SOCI"" ) ) )"
-
-
-Number of results : 111
-
-"YEAR",
-"2020","16"
-"2019","32"
-"2018","14"
-"2017","9"
-"2016","12"
-"2015","9"
-"2014","1"
-"2013","4"
-"2012","2"
-"2011","4"
-"2008","1"
-"2007","1"
-"2004","1"
-"2000","1"
-"1995","1"
-"1992","1"
-"1989","1"
-"1976","1"
+•ÈÀScopus-111-Analyze-Year,,"Your query : (TITLE-ABS-KEY ( ""rapid review"" OR ""rapid evidence review"" ) AND ( LIMIT-TO ( SRCTYPE,""j"" ) )  AND ( LIMIT-TO ( SUBJAREA,""SOCI"" ) ) )",,,Number of results : 135,,YEAR,2020,392019,322018,142017,92016,122015,92014,12013,42012,22011,42008,12007,12004,12000,11995,11992,11989,11976,1
