@@ -1,0 +1,9 @@
+study_ID,Question_and_criteria,Protocol_mentioned,Study_type_selection,Comprehensive_literature_search_performed,Study_selection_in_duplicate,Data_extraction_in_duplicate,Excluded_studies_listed_with_justifications,Included_studies_described_in_detail,Risk_of_bias_assessed,Study_funding_and_conflict_of_interest_extracted,Appropriate_meta-analysis_methods,Included_risk_of_bias_in_meta-analysis,Included_risk_of_bias_in_discussion,Observed_heterogeneity_discussed, Publication_bias_quantified/discussed,Review_funding_and_conflict_of_interest_disclosed
+1,Yes,Yes,Yes,Partially,Yes,Partially,Yes,Yes,Partially,Yes,Yes,Partially,Partially,Yes,Partially,Yes
+2,Yes,Yes,Yes,Partially,Yes,Partially,Yes,Yes,Yes,Yes,NotApplicable,NotApplicable,Yes,Yes,NotApplicable,Yes
+3,Yes,Yes,Yes,Partially,Yes,Partially,Yes,Yes,Partially,Yes,NotApplicable,NotApplicable,NotApplicable,Yes,NotApplicable,Yes
+4,Yes,Yes,Yes,Partially,Yes,Partially,Yes,Yes,Yes,Yes,NotApplicable,NotApplicable,Yes,Yes,NotApplicable,Yes
+5,Yes,Yes,Yes,Partially,Yes,Partially,Yes,Yes,Yes,Yes,NotApplicable,NotApplicable,Yes,Yes,NotApplicable,Yes
+6,Yes,Partially,Yes,Partially,Yes,Partially,Yes,Yes,Yes,Yes,NotApplicable,NotApplicable,Yes,Yes,NotApplicable,Yes
+7,Yes,Yes,Partially,Partially,Partially,Partially,Yes,Yes,Partially,Yes,NotApplicable,NotApplicable,Yes,Yes,NotApplicable,Yes
+8,Yes,Yes,Partially,Partially,Yes,Partially,Yes,Yes,Partially,Yes,NotApplicable,NotApplicable,Partially,Yes,NotApplicable,Yes

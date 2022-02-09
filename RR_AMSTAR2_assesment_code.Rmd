@@ -3,6 +3,8 @@ title: "RR_AMSTAR2_assessment"
 author: "ML"
 date: "26/11/2020"
 output: html_document
+editor_options: 
+  chunk_output_type: console
 ---
 
 ```{r setup, include=FALSE}
@@ -445,7 +447,7 @@ rob.summary(data2, name.high = "high", name.unclear = "uc", name.low = "low",
 Loading simplified AMSTAR2 assessment results table for making RoB-style chart.
 
 ```{r load data}
-data0 <- read.csv(file = "./data/AMSTAR2_sheet_RRs_v0_simplified.csv", colClasses = "character")
+data0 <- read.csv(file = "./data/AMSTAR2_sheet_RRs_v1_simplified.csv", colClasses = "character")
 dim(data0)
 str(data0)
 
@@ -566,8 +568,5 @@ rob.plot <- ggplot(data = data0.long) +
 plot(rob.plot)
 
 ## save plot
-ggsave(file = "figure_RR_apprisal2_v01.pdf", width = 16, height = 12, units = "cm", scale = 1.5, device = cairo_pdf)
+ggsave(file = "figure_RR_apprisal2_v01.pdf", width = 16.5, height = 12, units = "cm", scale = 1.5, device = cairo_pdf)
 ```
-
-
-
