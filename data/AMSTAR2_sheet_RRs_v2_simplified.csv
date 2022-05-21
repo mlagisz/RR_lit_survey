@@ -1,0 +1,9 @@
+study_ID,Q1 .Question_and_criteria_clear,Q2. Protocol_mentioned,Q3. Study_type_selection_explained,Q4.Comprehensive_literature_search_performed,Q5. Study_selection_done_in_duplicate,Q6. Data_extraction_done_in_duplicate,Q7. Excluded_studies_listed_with_justifications,Q8. Included_studies_described_in_detail,Q9. Risk_of_bias_assessed,Q10.Study_funding_and_conflict_of_interest_extracted,Q11.Appropriate_meta-analysis_methods,Q12.Included_risk_of_bias_in_meta-analysis,Q13.Included_risk_of_bias_in_discussion,Q14.Observed_heterogeneity_discussed,Q15.Publication_bias_quantified,Q16.Review_funding_and_conflict_of_interest_disclosed
+1,Yes,Yes,Yes,Partially,Yes,Partially,Yes,Yes,Partially,Yes,Yes,Partially,Yes,Yes,Partially,Yes
+2,Yes,Yes,Yes,Partially,Yes,Partially,Yes,Yes,Yes,Yes,NotApplicable,NotApplicable,Partially,Yes,NotApplicable,Yes
+3,Yes,Yes,Yes,Partially,Yes,Partially,Yes,Yes,Partially,Yes,NotApplicable,NotApplicable,Yes,Yes,NotApplicable,Yes
+4,Yes,Yes,Yes,Partially,Yes,Partially,Yes,Yes,Yes,Yes,NotApplicable,NotApplicable,Yes,Yes,NotApplicable,Yes
+5,Yes,Yes,Yes,Partially,Yes,Partially,Yes,Yes,Yes,Yes,NotApplicable,NotApplicable,Yes,Yes,NotApplicable,Yes
+6,Yes,Partially,Partially,Partially,Yes,Partially,Yes,Yes,Yes,Yes,NotApplicable,NotApplicable,Yes,Yes,NotApplicable,Yes
+7,Yes,Yes,Partially,Partially,Partially,Partially,Yes,Yes,Partially,Yes,NotApplicable,NotApplicable,Yes,Yes,NotApplicable,Yes
+8,Yes,Yes,Partially,Partially,Yes,Partially,Yes,Yes,Partially,Yes,NotApplicable,NotApplicable,Yes,Yes,NotApplicable,Yes
