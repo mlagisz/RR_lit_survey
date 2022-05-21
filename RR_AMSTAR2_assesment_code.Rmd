@@ -463,7 +463,7 @@ AMASTAR2 assessment results plots per study
 
 ```{r plot1}
 ## data prep
-str(data0)
+
 studies <- data0$study_ID
 
 atable <- data0[ , 2:ncol(data0)] #only select columns with assessment data (remove first column with study codes)
@@ -512,8 +512,8 @@ ggsave(file = "figure_RR_apprisal1_v02.pdf", width = 16, height = 12, units = "c
 AMASTAR2 assessment results plots as percentages per question
 
 ```{r  plot2}
+
 ## data prep
-str(data0)
 studies <- data0$study_ID
 data1 <- data0[ , 2:ncol(data0)] #only select columns with assessment data (remove first column with study codes)
       
