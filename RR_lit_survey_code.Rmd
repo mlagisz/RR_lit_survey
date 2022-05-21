@@ -50,8 +50,11 @@ data_RRinENVI$Search <- "RR_ENVI"
 
 #bind
 data_all <- rbind(data_SRinMEDI, data_RRinMEDI, data_SRinSOCI, data_RRinSOCI, data_SRinENVI, data_RRinENVI)
-str(data_all)
 data_all$Search <- factor(data_all$Search) #labels as factors
+
+#clean - remove 2022 data
+data_all <- filter(data_all, Year < 2022)
+str(data_all)
 ```
 
 
@@ -89,7 +92,7 @@ p2 <- data_all %>%
 p1/p2
 
 ## save plots
-ggsave(file = "figure_litsurvey_v03.pdf", width = 16.5, height = 16, units = "cm", scale = 1, device = cairo_pdf)
+ggsave(file = "figure_litsurvey_v04.pdf", width = 16.5, height = 16, units = "cm", scale = 1, device = cairo_pdf)
 
 # pdf(file = "figure_litsurvey_v03.pdf", width = 16, height =  8)
 # p1 / p2 # + plot_layout(heights = c(1,1))
